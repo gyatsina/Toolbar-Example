@@ -22,6 +22,15 @@ public class MyActivity extends Activity {
         toolbar.setTitle("MY toolbar");
         toolbar.setSubtitle("Subtitle");
 
+        /*If set title and subtitle through xml and make them clickable*/
+
+//        toolbar.findViewById(R.id.toolbar_subtitle).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(MyActivity.this, "hello, I am subtitle!", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
         //Menu
         toolbar.inflateMenu(R.menu.my);
 
@@ -47,14 +56,6 @@ public class MyActivity extends Activity {
                 Toast.makeText(MyActivity.this,"Navigation",Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
-        return true;
     }
 
     @Override

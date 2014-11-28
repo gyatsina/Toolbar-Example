@@ -1,18 +1,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="56dp">
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--If to set title and subtitle through xml, not from code-->
+            <!--<TextView-->
+            <!--android:id="@+id/toolbar_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Title" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/toolbar_subtitle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Subtitle" />-->
+        </LinearLayout>
     </android.support.v7.widget.Toolbar>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
 
-        android:background="#445566"/>
+        android:background="#445566" />
 
 </LinearLayout>

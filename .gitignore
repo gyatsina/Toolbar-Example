@@ -1,6 +1,23 @@
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+# Mac OSX Finder
 .DS_Store
-/build
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+bin/
+gen/
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+
+# Gradle
+.gradle/
+build/
